@@ -1,0 +1,36 @@
+header {
+    border-bottom: 3px solid gray;
+    padding: 5px 5px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 8fr 2fr;
+    width: 400px; 
+    height: 600px;
+    justify-content: center;
+    padding: 5px;
+    border: 2px solid lightgrey;
+    border-radius: 4%;
+    margin: 5px;
+}
+
+label, input {
+    display: block;
+    max-width: 250px;
+    
+}
+
+label{
+
+}
+
+input {
+    padding: 3px;
+    margin: 3px;
+}
+
+#content {
+
+}

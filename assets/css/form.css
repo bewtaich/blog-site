@@ -1,24 +1,22 @@
-* {
-    margin: 5px;
-}
-header {
-    border-bottom: 3px solid gray;
-    padding: 5px 5px;
-}
-
 form {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 8fr 2fr;
-    width: 400px; 
-    height: 600px;
-    justify-content: center;
+    max-width: 50%; 
+    min-width: 400px;
+    max-height: 100%;
+    min-height: 600px;
     padding: 5px;
     border: 2px solid lightgrey;
     border-radius: 4%;
     margin: 5px;
+    background-color: rgb(193, 193, 193);
+    padding: 15px;
 }
 
+label{
+    font-style: bolds;
+}
 label, input {
     display: block;
     max-width: 250px;
@@ -26,8 +24,9 @@ label, input {
     margin: 3px;
 }
 
-input {
-    padding: 3px;
-    margin: 3px;
+#post {
+    color: white;
+    background-color: rgb(15, 15, 15);
 }
+
 

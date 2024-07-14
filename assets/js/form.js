@@ -2,10 +2,6 @@ const form=document.querySelector('form');
 const title = document.getElementById("title");
 const user = document.getElementById('user');
 const content = document.getElementById('content');
-const mode = ['light'];
-const darkmode = document.getElementById('darkmode');
-
-
 
 const post = function (event) {
 
@@ -23,44 +19,3 @@ const post = function (event) {
 
 form.addEventListener('submit', post);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Light/Dark mode toggle
-
-const toggle = function () {
-    if (mode[0] === 'light') {
-         mode[0] = 'dark'
-        console.log(mode[0])
-    } else {
-        mode[0] = 'light'
-        console.log(mode[0])
-    }
-}
-
-darkmode.addEventListener('click', toggle);

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share A Blog</title>
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
   </head>
   <body>
     <header>
         <div>
-            <button id="darkmode"></button>
+            <button id="darkmode">
+              <img src="./images/light-mode.svg" alt="A Sun">
+            </button>
         </div>
 
 
@@ -26,7 +29,7 @@
             <label for="content">Content</label>
             <textarea type="text" name="content" id="content"></textarea>
 
-            <button>Submit Post</button>
+            <button id="post">Submit Post</button>
         </form>
         
         
@@ -43,6 +46,7 @@
 
 
     </main>
-	<script src="./assets/script.js"></script>
+	<script src="./assets/js/script.js"></script>
+  <script src="./assets/js/form.js"></script>
   </body>
 </html>

@@ -1,3 +1,6 @@
+* {
+    margin: 5px;
+}
 header {
     border-bottom: 3px solid gray;
     padding: 5px 5px;
@@ -19,11 +22,8 @@ form {
 label, input {
     display: block;
     max-width: 250px;
-    
-}
-
-label{
-
+    padding: 3px;
+    margin: 3px;
 }
 
 input {
@@ -31,6 +31,3 @@ input {
     margin: 3px;
 }
 
-#content {
-
-}

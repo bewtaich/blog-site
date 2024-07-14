@@ -3,36 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Share A Blog</title>
+    <title>Blog Creator</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/form.css">
   </head>
-  <body>
+  <body class="light">
     <header>
-        <div>
-            <button id="darkmode">
-              <img src="./images/light-mode.svg" alt="A Sun">
-            </button>
-        </div>
 
+            <button class="light" id="btn">
+              <img src="./assets/images/light-mode.svg" alt="A Sun">
+            </button>
+            <h1>Write Your Blog Here</h1>
+   
 
     </header>
     <main>
      
         <form action="">
-            <label for="user">Username</label>
+            <label for="user"><b>Username</b></label>
             <input type="text" name="user" id="user">
 
-            <label for="title">Title</label>
+            <label for="title"><b>Title</b></label>
             <input type="text" name="title" id="title">
 
-            <label for="content">Content</label>
+            <label for="content"><b>Content</b></label>
             <textarea type="text" name="content" id="content"></textarea>
 
             <button id="post">Submit Post</button>
         </form>
         
         
+        <div>
 
 
 
@@ -41,9 +42,7 @@
 
 
 
-
-
-
+        </div>
 
     </main>
 	<script src="./assets/js/script.js"></script>

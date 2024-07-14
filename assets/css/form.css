@@ -1,32 +1,59 @@
-form {
+body.light > main > form {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 8fr 2fr;
-    max-width: 50%; 
-    min-width: 400px;
-    max-height: 100%;
-    min-height: 600px;
     padding: 5px;
+    max-width: 50%;
     border: 2px solid lightgrey;
     border-radius: 4%;
     margin: 5px;
-    background-color: rgb(193, 193, 193);
+    background-color: rgb(231, 231, 231);
     padding: 15px;
 }
 
-label{
-    font-style: bolds;
+body.dark > main > form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 8fr 2fr;
+    padding: 5px;
+    max-width: 50%;
+    border: 2px solid lightgrey;
+    border-radius: 4%;
+    margin: 5px;
+    background-color: rgb(29, 29, 29);
+    padding: 15px;
 }
-label, input {
+
+input {
     display: block;
     max-width: 250px;
     padding: 3px;
-    margin: 3px;
+    margin: 0px 3px 3px;
 }
 
+body.dark >main>form>input, body.dark >main>form>textarea {
+    background-color: gray;
+    color: white;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    text-decoration: underline;
+    ;
+}
 #post {
     color: white;
     background-color: rgb(15, 15, 15);
 }
+
+@media screen and (max-width: 992px) {
+    body.light > main > form, body.dark > main > form {
+      max-width: 90%;
+    }
+  }
+    
+
 
 

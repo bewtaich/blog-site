@@ -1,19 +1,21 @@
-
-
-const mode = ['light'];
-const darkmode = document.getElementById('darkmode');
+const body = document.querySelector('body');
+const modes = document.getElementById('btn');
 
 
 // Light/Dark mode toggle
 
-const toggle = function () {
-    if (mode[0] === 'light') {
-         mode[0] = 'dark'
-        darkmode.innerHTML = '<img src="./images/dark-mode.svg" alt="A Moon">'
+const toggle = function (event) {
+    if (modes.className === 'light') {
+        event.preventDefault();
+        modes.className = 'dark'
+        body.className = 'dark'
+        modes.innerHTML = '<img src="./assets/images/dark-mode.svg" alt="A Moon">'
 
     } else {
-        mode[0] = 'light'
-        darkmode.innerHTML = '<img src="./images/light-mode.svg" alt="A Sun">'
+        event.preventDefault();
+        modes.className = 'light'
+        body.className = 'light'
+        modes.innerHTML = '<img src="./assets/images/light-mode.svg" alt="A Sun">'
 }
 }
-darkmode.addEventListener('click', toggle);
+modes.addEventListener('click', toggle);

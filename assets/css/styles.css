@@ -8,23 +8,27 @@ header {
     margin :3px;
 }
 
+
+/* Dark/Light mode body*/
 .dark {
     color: white;
     background-color: rgba(42, 40, 47, 0.773);
     transition: background-color 1s;
 }
+.light {
+    background-color: lightblue;
+    transition: background-color 1s;
+}
 
+/*Dark/Light mode header*/
+.light header {
+    background-color: lightgray;
+}
 .dark header {
     background-color: black;
 }
 
-
-.light {
-    background-color:
-    transition: background-color 1s;
-
-}
-
+/*Dark/Light mode button*/
 button.dark {
     background-color: lightgray;
     max-width: 50px;

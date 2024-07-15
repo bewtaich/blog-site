@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
 const modes = document.getElementById('btn');
-
+const view = document.getElementById('view')
 
 // Light/Dark mode toggle
 
@@ -49,3 +49,10 @@ const toggle = function (event) {
 }
 }
 modes.addEventListener('click', toggle);
+
+
+
+
+view.addEventListener('click', function () {
+    location.href='blog.html'
+})

@@ -48,6 +48,10 @@ label{
     background-color: rgb(15, 15, 15);
 }
 
+button {
+    background-color: whitesmoke;;
+}
+
 @media screen and (max-width: 992px) {
     body.light > main > form, body.dark > main > form {
       max-width: 90%;

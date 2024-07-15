@@ -26,7 +26,6 @@ for (let i=0; i < posts.length; i++){
     blogArea.appendChild(blogUser);
 
     blogTitle.innerHTML=posts[i].title
-
     blogUser.innerHTML=`- ${posts[i].user}`
     blogContent.innerHTML=posts[i].content
 }

@@ -49,20 +49,11 @@ button {
     background-color: whitesmoke;;
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     display: flex;
     justify-content: center;
+}
+
+a:visited {
+    color:blue;
 }

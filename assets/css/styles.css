@@ -9,6 +9,7 @@ header {
     margin :3px;
     border: 1px solid lightgrey;
     border-radius: 10px;
+    background-color: #eeeff1;
 }
 
 main {
@@ -32,7 +33,6 @@ main {
     transition: background-color 1s;
 }
 .light {
-    background-color: white;
     transition: background-color 1s;
 }
 
@@ -51,6 +51,7 @@ main {
 button.dark {
     background-color: #eeeff1;
     max-width: 50px;
+    border-color: whitesmoke;
 }
 
 button.light{

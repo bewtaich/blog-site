@@ -3,7 +3,11 @@ const form=document.querySelector('form');
 const title = document.getElementById("title");
 const user = document.getElementById('user');
 const content = document.getElementById('content');
-const posts =[];
+const empty = [];
+
+
+
+
 
 
 const post = function (event) {
@@ -11,21 +15,30 @@ const post = function (event) {
 
     if (title.value =="" || user.value=="" || content.value === "") {
         alert('Please fill out all fields');
-        console.log(`${title.value},${user.value},${content.value}`)
     } else {
 
-    const postData = {
-        user:user.value, 
-        title:title.value,
-        content:content.value
-    }     
+        const postData = {
+                user:user.value, 
+                title:title.value,
+                content:content.value
+                };
 
+        const storage=localStorage.getItem('posts');
 
-    posts.push(postData);
+        if (storage === null) {
+            empty.push(postData);
+            localStorage.setItem('posts', JSON.stringify(empty));      
+            location.href = 'blog.html';    
+        } else {
 
-    localStorage.setItem('posts', JSON.stringify(posts))
+            const posts = JSON.parse(storage);
 
-    location.href = 'blog.html'
+                posts.push(postData);
+                localStorage.setItem('posts', JSON.stringify(posts));
+
+                location.href = 'blog.html';
+        
+        }   
     }
 }
 

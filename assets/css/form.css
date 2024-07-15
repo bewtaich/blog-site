@@ -4,10 +4,10 @@ body.light > main > form {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 8fr 2fr;
     padding: 5px;
     max-width: 50%;
-    border: 2px solid lightgrey;
-    border-radius: 4%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
     margin: 5px;
-    background-color: rgb(231, 231, 231);
+    background-color:#eeeff1;
     padding: 15px;
 }
 
@@ -17,10 +17,10 @@ body.dark > main > form {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 8fr 2fr;
     padding: 5px;
     max-width: 50%;
-    border: 2px solid lightgrey;
-    border-radius: 4%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
     margin: 5px;
-    background-color: rgb(29, 29, 29);
+    background-color: 	#1e1e1e;
     padding: 15px;
 }
 
@@ -32,7 +32,7 @@ input {
 }
 
 body.dark >main>form>input, body.dark >main>form>textarea {
-    background-color: gray;
+    background-color: #3e3e42;
     color: white;
 }
 label{
@@ -52,8 +52,19 @@ label{
     body.light > main > form, body.dark > main > form {
       max-width: 90%;
     }
+
+    #blogs {
+        display: block;
+        float: none;
+        max-width: 90%;
+        max-height: 35%;
+    }
   }
-    
 
+  @media screen and (min-width: 1024px) {
+    body.light > main > form, body.dark > main > form {
+        max-width: 90%;
+      }
 
+  }
 

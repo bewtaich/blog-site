@@ -2,39 +2,58 @@
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
     }
+
+
 header {
-    border-bottom: 3px solid gray;
     padding: 5px 5px;
     margin :3px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
 }
 
+main {
+    border-top: 3px double gray;
+}
+
+#blogs {
+    float: left;
+    max-width:50%;
+    max-height: 450px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    margin: 1px 10px 10px;
+    
+}
 
 /* Dark/Light mode body*/
 .dark {
     color: white;
-    background-color: rgba(42, 40, 47, 0.773);
+    background-color: #2d2d30;
     transition: background-color 1s;
 }
 .light {
-    background-color: lightblue;
+    background-color: white;
     transition: background-color 1s;
 }
 
+
+
 /*Dark/Light mode header*/
 .light header {
-    background-color: lightgray;
+    background-color:#eeeff1;
 }
 .dark header {
-    background-color: black;
+    background-color: #1e1e1e;
 }
+
 
 /*Dark/Light mode button*/
 button.dark {
-    background-color: lightgray;
+    background-color: #eeeff1;
     max-width: 50px;
 }
 
 button.light{
-    background-color: rgb(255, 254, 234);
+    background-color: whitesmoke;
     max-width: 50px;
 }
